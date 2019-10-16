@@ -20,7 +20,7 @@ class AnimalContainer extends StatelessWidget{
         child:Text(animal.descripton, style: subtitleStyle,),),
       title: Text(animal.name, style: titleStyle,),
     onTap: (){
-      Navigator.push(context, MaterialPageRoute(builder: (context) => AnimalDetail()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => AnimalDetail(animal)));
     },
   
     ),
