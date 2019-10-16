@@ -25,7 +25,8 @@ class AnimalsListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-  
+
+        elevation: 0.01,
         backgroundColor: Colors.white,
         centerTitle: true,
         leading: Icon(Icons.list, color: Colors.orange,),

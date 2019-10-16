@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animal_for_kids/Data/animals.dart';
 import 'package:flutter/semantics.dart';
 import 'package:animal_for_kids/styles/textStyles.dart';
+import 'package:animal_for_kids/animals_widgets/animal_detail.dart';
 
 class AnimalContainer extends StatelessWidget{
   final Animal animal;
@@ -19,7 +20,7 @@ class AnimalContainer extends StatelessWidget{
         child:Text(animal.descripton, style: subtitleStyle,),),
       title: Text(animal.name, style: titleStyle,),
     onTap: (){
-      print("tapped");
+      Navigator.push(context, MaterialPageRoute(builder: (context) => AnimalDetail()));
     },
   
     ),
