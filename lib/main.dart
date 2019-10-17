@@ -24,21 +24,43 @@ class AnimalsListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-
-        elevation: 0.01,
-        backgroundColor: Colors.white,
-        centerTitle: true,
-        leading: Icon(Icons.list, color: Colors.orange,),
-        title: Text("Learn", style: headerStyle),
-        actions: <Widget>[Icon(Icons.live_tv, color: Colors.orange,)],
-      ),
-      body: ListView.builder(
-        itemCount: animals.length,
-        itemBuilder: (BuildContext context, int index) {
-          return AnimalRow(animals[index]);
-        },
-      ),
-    );
+        appBar: AppBar(
+          elevation: 0.01,
+          backgroundColor: Colors.white,
+          centerTitle: true,
+          leading: Padding(
+            padding: EdgeInsets.only(left: 30),
+            child: InkWell(
+              onTap: (){},
+              customBorder: CircleBorder(),
+              child: Image(
+                image: AssetImage("assets/images/twolines.png"),
+              ),
+            ),
+          ),
+          title: Text("Learn", style: headerStyle),
+          actions: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(right: 30),
+              child: InkWell(
+                onTap: (){},
+                customBorder: CircleBorder(),
+                  child: Image(
+                image: AssetImage("assets/images/dog.png"),
+                height: 40,
+                width: 40,
+              )),
+            ),
+          ],
+        ),
+        body: Padding(
+          padding: EdgeInsets.only(bottom: 10),
+          child: ListView.builder(
+            itemCount: animals.length,
+            itemBuilder: (BuildContext context, int index) {
+              return AnimalRow(animals[index]);
+            },
+          ),
+        ));
   }
 }

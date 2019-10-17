@@ -11,9 +11,8 @@ class AnimalContainer extends StatelessWidget{
   Widget build(BuildContext context){
     return Material( child: InkWell( child:
     Container(
-      margin: EdgeInsets.only(left: 46),
-      padding:EdgeInsets.only(left: 46, top: 10, bottom: 15),
-    width: 250,
+      margin: EdgeInsets.only(left: 46, right: 20),
+      padding:EdgeInsets.only(left: 46, top: 10, bottom: 15, right: 15),
     child: ListTile(
       subtitle: Padding(
         padding: EdgeInsets.only(top:10),
@@ -34,16 +33,26 @@ class AnimalContainer extends StatelessWidget{
     )));
   }
 }
-class AnimalRow extends StatelessWidget {
+
+class AnimalImage extends StatelessWidget{ 
   final Animal animal;
-  final animalThumbnail = Container(
+  AnimalImage(this.animal);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
     // margin: EdgeInsets.symmetric(vertical: 16),
     alignment: FractionalOffset.centerLeft,
+    child: Hero(
+      tag:animal.name,
     child: Image(
-        image: AssetImage("assets/images/some.png"),
+        image: AssetImage(animal.img),
          height: 130, width: 90
         ),
-  );
+  ));
+  }
+}
+class AnimalRow extends StatelessWidget {
+  final Animal animal;
 
 
   AnimalRow(this.animal);
@@ -51,10 +60,10 @@ class AnimalRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 50, top: 15),
+      margin: EdgeInsets.only(left: 30, top: 15),
       child: Stack(
         children: <Widget>[
-          InkWell(child:AnimalContainer(animal)), animalThumbnail],
+          InkWell(child:AnimalContainer(animal)), AnimalImage(animal)],
       ),
     );
   }

@@ -22,7 +22,10 @@ import 'package:animal_for_kids/styles/textStyles.dart';
                            children: <Widget>[
                              Padding(
                                padding: EdgeInsets.only(left:20),
-                               child:Text(animal.name, style: headerStyle,))
+                               child:Text(animal.name, style: headerStyle,)),
+                               Padding(
+                               padding: EdgeInsets.only(left:20),
+                               child:Text(animal.detail, style: textStyle,))
                            ],
                          )
                         ],
@@ -38,9 +41,12 @@ import 'package:animal_for_kids/styles/textStyles.dart';
                       bottomRight: Radius.circular(20)),
                   color: animal.color,
                 ),
+                child: Hero(
+                  tag: animal.name,
                 child: Image(
-                  image: AssetImage("assets/images/some.png"),
+                  image: AssetImage(animal.img),
                 )
+              ),
               ),
               BackButton(color: Colors.white),
             ]),),
