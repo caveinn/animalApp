@@ -33,7 +33,7 @@ import 'package:animal_for_kids/styles/textStyles.dart';
                         ),
               Container(
                 padding: EdgeInsets.only(left: 50),
-                height: 300,
+                height: 280,
                 width:double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
