@@ -30,13 +30,18 @@ class AnimalsListPage extends StatelessWidget {
           centerTitle: true,
           leading: Padding(
             padding: EdgeInsets.only(left: 30),
-            child: InkWell(
-              onTap: (){},
+            child: new Builder(builder: (context) {
+					return new InkWell(
+              onTap: (){
+                Scaffold.of(context).openDrawer();
+              },
               customBorder: CircleBorder(),
               child: Image(
                 image: AssetImage("assets/images/twolines.png"),
               ),
-            ),
+            );
+				}),
+            
           ),
           title: Text("Learn", style: headerStyle),
           actions: <Widget>[
@@ -53,6 +58,54 @@ class AnimalsListPage extends StatelessWidget {
             ),
           ],
         ),
+        drawer: Column(
+          children: <Widget>[
+            Container(
+          width: 200,
+          height:400,
+          padding: EdgeInsets.only(top:22),
+          child: ClipRRect(
+            borderRadius: BorderRadius.only(bottomRight: Radius.circular(20)),
+            child: Drawer(
+          
+        // Add a ListView to the drawer. This ensures the user can scroll
+        // through the options in the drawer if there isn't enough vertical
+        // space to fit everything.
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              padding: EdgeInsets.all(50),
+              child: Text('Extra content', style: titleStyle,),
+              decoration: BoxDecoration(
+                color: Colors.orangeAccent,
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30))
+              ),
+            ),
+            ListTile(
+              title: Text('Item 1'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Item 2'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+          ],)
+        ),),
+        ),
+        ]
+        ) ,
         body: Padding(
           padding: EdgeInsets.only(bottom: 10),
           child: ListView.builder(
