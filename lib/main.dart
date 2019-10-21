@@ -58,15 +58,7 @@ class AnimalsListPage extends StatelessWidget {
             ),
           ],
         ),
-        drawer: Column(
-          children: <Widget>[
-            Container(
-          width: 200,
-          height:400,
-          padding: EdgeInsets.only(top:22),
-          child: ClipRRect(
-            borderRadius: BorderRadius.only(bottomRight: Radius.circular(20)),
-            child: Drawer(
+        drawer: Drawer(
           
         // Add a ListView to the drawer. This ensures the user can scroll
         // through the options in the drawer if there isn't enough vertical
@@ -102,10 +94,7 @@ class AnimalsListPage extends StatelessWidget {
               },
             ),
           ],)
-        ),),
-        ),
-        ]
-        ) ,
+        ), 
         body: Padding(
           padding: EdgeInsets.only(bottom: 10),
           child: ListView.builder(
