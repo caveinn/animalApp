@@ -24,8 +24,11 @@ import 'package:animal_for_kids/styles/textStyles.dart';
                                padding: EdgeInsets.only(left:20),
                                child:Text(animal.name, style: headerStyle,)),
                                Padding(
-                               padding: EdgeInsets.only(left:20),
-                               child:Text(animal.detail, style: textStyle,))
+                               padding: EdgeInsets.only(left:20, top:10),
+                               child:Text(
+                                 animal.detail,
+                                 textAlign: TextAlign.left, 
+                                 style: textStyle,))
                            ],
                          )
                         ],
