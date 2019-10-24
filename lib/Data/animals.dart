@@ -15,38 +15,38 @@ List<Animal>  getAnimals(){
     Animal("Lion",
      "Lion is the king of the jungle",
      '''
-    Lions are part of the cat family.
+Lions are part of the cat family.
 
-    Lions eat meat.
+Lions eat meat.
 
-    Female lions are called lionesses.
+Female lions are called lionesses.
 
-    They make a loud noice called roaring. 
+They make a loud noice called roaring. 
 
-    Male lions have a coat of fuzzy hair around 
-    their necks called manes. They protect them
-    from gettting bitten during fights.
+Male lions have a coat of fuzzy hair around 
+their necks called manes. They protect 
+them from gettting bitten during fights.
 
-    The lionessess have no mane
-    which allows them to run faster. They therefore 
-    do all the hunting.
+The lionessess have no mane
+which allows them to run faster. They therefore 
+do all the hunting.
 
      ''', Colors.orange[300], "assets/images/lion.png"),
     Animal("Hippo",
     "Hippos are large animals", 
     '''
-    Hippopotamus or hippo for short are
-    large animals that eat plants.
+Hippopotamus or hippo for short are
+large animals that eat plants.
 
-    They spent a lot of time in the water.
-    They sleep in the water during the day
-    to keep cool. 
+They spent a lot of time in the water.
+They sleep in the water during the day
+to keep cool. 
 
-    They have big teeth. They use their
-    teeth to defent their sport in the
-    river.
-    
-    They graze at night.
+They have big teeth. They use their
+teeth to defent their sport in the
+river.
+
+They graze at night.
 
     ''',
      Colors.indigo[300],"assets/images/hippo.png"),
@@ -60,25 +60,25 @@ List<Animal>  getAnimals(){
     Colors.brown[400], 
     "assets/images/giraffe.png"),
      Animal("Zebra",
-     "A zebra eats grass and has black and white stripes", 
-     '''
-     Zebras eat grass.
+"A zebra eats grass and has black and white stripes", 
+'''
+Zebras eat grass.
 
-     Zebras look a lot like horses. They have 
-     black and white stripes. 
+Zebras look a lot like horses. They have 
+black and white stripes. 
 
-     Each Zebra has a unique stripe pattern.
+Each Zebra has a unique stripe pattern.
 
-     They like to live in large groups called 
-     herds. They stay together for protection.
+They like to live in large groups called 
+herds. They stay together for protection.
 
-     They love to run. They can run more than
-     200 kilometres every year in search of
-     food and water.
+They love to run. They can run more than
+200 kilometres every year in search of
+food and water.
 
-     The stripes makes it hard for lions and other 
-     predators to see them and therefore they do 
-     not bother them.
+The stripes makes it hard for lions and other 
+predators to see them and therefore they do 
+not bother them.
      ''',
       Colors.blueGrey[300], "assets/images/zebra.png"),
     Animal(
