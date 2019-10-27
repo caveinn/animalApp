@@ -1,3 +1,4 @@
+import 'package:animal_for_kids/animals_widgets/drawer.dart';
 import 'package:animal_for_kids/styles/textStyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -83,43 +84,7 @@ class AnimalsListPage extends StatelessWidget {
             ),
           ],
         ),
-        drawer: Drawer(
-          
-        // Add a ListView to the drawer. This ensures the user can scroll
-        // through the options in the drawer if there isn't enough vertical
-        // space to fit everything.
-        child: ListView(
-          // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              padding: EdgeInsets.all(50),
-              child: Text('Extra content', style: titleStyle,),
-              decoration: BoxDecoration(
-                color: Colors.orangeAccent,
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30))
-              ),
-            ),
-            ListTile(
-              title: Text('Item 1'),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: Text('Item 2'),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-          ],)
-        ), 
+        drawer: MyDrawer(),
         body: Padding(
           padding: EdgeInsets.only(bottom: 10),
           child: ListView.builder(

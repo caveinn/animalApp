@@ -33,7 +33,7 @@ do all the hunting.
 
      ''', Colors.orange[300], "assets/images/lion.png"),
     Animal("Hippo",
-    "Hippos are large animals", 
+    "Hippos are large animals that live ", 
     '''
 Hippopotamus or hippo for short are
 large animals that eat plants.
