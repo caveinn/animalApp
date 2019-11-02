@@ -29,10 +29,13 @@ import 'package:animal_for_kids/styles/textStyles.dart';
                                  animal.detail,
                                  textAlign: TextAlign.left, 
                                  style: textStyle,)),
-                                RaisedButton(
-                                  onPressed: (){},
-                                  child:Center( 
-                                    child:Text("Test Thyself")),
+                                Container(
+                                  width: 20,
+                                  child: RaisedButton(
+                                    onPressed: (){},
+                                    child:Center( 
+                                      child:Text("Test Thyself")),
+                                  ),
                                 )
                            ],
                          )
