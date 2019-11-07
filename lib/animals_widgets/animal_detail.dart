@@ -1,6 +1,7 @@
- import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:animal_for_kids/Data/animals.dart';
 import 'package:animal_for_kids/styles/textStyles.dart';
+import 'package:animal_for_kids/pages/questions.dart';
 
  class AnimalDetail extends StatelessWidget {
    final Animal animal;
@@ -29,12 +30,17 @@ import 'package:animal_for_kids/styles/textStyles.dart';
                                  animal.detail,
                                  textAlign: TextAlign.left, 
                                  style: textStyle,)),
-                                Container(
-                                  width: 20,
-                                  child: RaisedButton(
-                                    onPressed: (){},
-                                    child:Center( 
-                                      child:Text("Test Thyself")),
+                                Center(
+                                  child: Container(
+                                    margin: EdgeInsets.only(bottom: 20),
+                                    width: 100,
+                                    child: RaisedButton(
+                                      color: animal.color,
+                                      onPressed: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => Question(animal.question)));
+                                      },
+                                      child: 
+                                        Text("Questions")),
                                   ),
                                 )
                            ],

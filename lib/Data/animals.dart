@@ -1,4 +1,18 @@
+import 'package:animal_for_kids/pages/questions.dart';
 import 'package:flutter/material.dart';
+
+
+
+class  AnimalQuestion{
+  final String detail;
+  final String  choiceA;
+  final String choiceB;
+  final String answer;
+  AnimalQuestion(this.detail,this.choiceA, this.choiceB, this.answer );
+
+}
+
+
 
 class Animal{
   final String name;
@@ -6,8 +20,10 @@ class Animal{
   final String detail;
   final Color color;
   final String img;
+  final AnimalQuestion question;
 
-  Animal(this.name, this.descripton, this.detail, this.color, this.img);
+
+  Animal(this.name, this.descripton, this.detail, this.color, this.img,this.question);
 }
 
 List<Animal>  getAnimals(){
@@ -31,7 +47,10 @@ The lionessess have no mane
 which allows them to run faster. They therefore 
 do all the hunting.
 
-     ''', Colors.orange[300], "assets/images/lion.png"),
+     ''', Colors.orange[300], "assets/images/lion.png",
+     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )
+     ),
+
     Animal("Hippo",
     "Hippos are large animals that live ", 
     '''
@@ -49,8 +68,11 @@ river.
 They graze at night.
 
     ''',
-     Colors.indigo[300],"assets/images/hippo.png"),
-    Animal("Rabbit","Rabbits are small mammals in the family of the", "Lion is the king of the jungle", Colors.green[300], "assets/images/rabbit.png"),
+    
+     Colors.indigo[300],"assets/images/hippo.png",
+     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
+    Animal("Rabbit","Rabbits are small mammals in the family of the", "Lion is the king of the jungle", Colors.green[300], "assets/images/rabbit.png", 
+    AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
     Animal("Giraffe","The Giraffe is the tallest animal in the world.", 
     '''
     Giraffe live on the plains of Africa
@@ -58,7 +80,8 @@ They graze at night.
     They can eat leaves from tree tops thanks to their long necks
       ''', 
     Colors.brown[400], 
-    "assets/images/giraffe.png"),
+    "assets/images/giraffe.png",
+    AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
      Animal("Zebra",
 "A zebra eats grass and has black and white stripes", 
 '''
@@ -80,7 +103,9 @@ The stripes makes it hard for lions and other
 predators to see them and therefore they do 
 not bother them.
      ''',
-      Colors.blueGrey[300], "assets/images/zebra.png"),
+      Colors.blueGrey[300], "assets/images/zebra.png",
+      AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )
+      ),
     Animal(
       "Elephant",
       "Elephants are the largest land-living mammal in the world.",
@@ -101,7 +126,8 @@ not bother them.
 
     ''', 
 
-     Colors.brown[400], "assets/images/elephant.png"),
+     Colors.brown[400], "assets/images/elephant.png",
+     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
 
     Animal("Dog","The Dog is humans best friend ", 
     '''
@@ -117,7 +143,10 @@ not bother them.
     people.
 
      ''',
-     Colors.deepOrange[300], "assets/images/pet.png"),
+     Colors.deepOrange[300], "assets/images/pet.png",
+     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )
+     
+     ),
 
     ];
   
