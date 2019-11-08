@@ -48,31 +48,35 @@ class _QuestionState extends State<Question> {
             children: <Widget>[
               Text("Q. ${widget.question.detail}"),
               Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text("A"),
-                    SizedBox(width: 20,),
-                    Image(
-                      image: AssetImage(widget.question.choiceA),
-                      height: 60,
-                      width: 60,
-                    )
-                  ],
+                child: Card(
+                                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("A"),
+                      SizedBox(width: 20,),
+                      Image(
+                        image: AssetImage(widget.question.choiceA),
+                        height: 60,
+                        width: 60,
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text("B"),
-                    SizedBox(width: 20,),
-                    Image(
-                      image: AssetImage(widget.question.choiceB),
-                      height: 60,
-                      width: 60,
-                    )
-                  ],
+                child: Card(
+                                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("B"),
+                      SizedBox(width: 20,),
+                      Image(
+                        image: AssetImage(widget.question.choiceB),
+                        height: 60,
+                        width: 60,
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
