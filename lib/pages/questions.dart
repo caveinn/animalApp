@@ -46,34 +46,42 @@ class _QuestionState extends State<Question> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text("Q. ${widget.question.detail}"),
+              SizedBox(height: 50,),
+              Text("Q. ${widget.question.detail}",style: headerStyle,),
               Container(
+                width: 300,
+                height: 250,
+                padding: EdgeInsets.only(left:60, top:20),
                 child: Card(
                                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("A"),
+                      Text("A",style: headerStyle,),
                       SizedBox(width: 20,),
                       Image(
                         image: AssetImage(widget.question.choiceA),
-                        height: 60,
-                        width: 60,
+                        height: 150,
+                        width: 150,
                       )
                     ],
                   ),
                 ),
               ),
               Container(
+                padding: EdgeInsets.only(left:60, top:20),
+                width: 300,
+                height: 250,
                 child: Card(
+                  elevation: 1.0,
                                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("B"),
+                      Text("B", style: headerStyle,),
                       SizedBox(width: 20,),
                       Image(
                         image: AssetImage(widget.question.choiceB),
-                        height: 60,
-                        width: 60,
+                        height: 150,
+                        width: 150,
                       )
                     ],
                   ),
