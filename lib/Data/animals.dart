@@ -104,7 +104,7 @@ predators to see them and therefore they do
 not bother them.
      ''',
       Colors.blueGrey[300], "assets/images/zebra.png",
-      AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )
+      AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/giraffe.png", "A" )
       ),
     Animal(
       "Elephant",
@@ -127,7 +127,7 @@ not bother them.
     ''', 
 
      Colors.brown[400], "assets/images/elephant.png",
-     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
+     AnimalQuestion("Which is an Elephant", "assets/images/elephant.png", "assets/images/lion.png", "B" )),
 
     Animal("Dog","The Dog is humans best friend ", 
     '''
