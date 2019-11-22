@@ -48,7 +48,7 @@ which allows them to run faster. They therefore
 do all the hunting.
 
      ''', Colors.orange[300], "assets/images/lion.png",
-     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )
+     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/dinosaur.png", "A" )
      ),
 
     Animal("Hippo",
@@ -81,7 +81,7 @@ They graze at night.
       ''', 
     Colors.brown[400], 
     "assets/images/giraffe.png",
-    AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
+    AnimalQuestion("Which is a hippo", "assets/images/hippo.png", "assets/images/lion.png", "B" )),
      Animal("Zebra",
 "A zebra eats grass and has black and white stripes", 
 '''
@@ -104,7 +104,7 @@ predators to see them and therefore they do
 not bother them.
      ''',
       Colors.blueGrey[300], "assets/images/zebra.png",
-      AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/giraffe.png", "A" )
+      AnimalQuestion("Which is a Zebra", "assets/images/Zebra.png", "assets/images/giraffe.png", "A" )
       ),
     Animal(
       "Elephant",
@@ -127,7 +127,7 @@ not bother them.
     ''', 
 
      Colors.brown[400], "assets/images/elephant.png",
-     AnimalQuestion("Which is an Elephant", "assets/images/elephant.png", "assets/images/lion.png", "B" )),
+     AnimalQuestion("Which is an Elephant", "assets/images/elephant.png", "assets/images/lion.png", "A" )),
 
     Animal("Dog","The Dog is humans best friend ", 
     '''
@@ -144,7 +144,7 @@ not bother them.
 
      ''',
      Colors.deepOrange[300], "assets/images/pet.png",
-     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )
+     AnimalQuestion("Which is a dog", "assets/images/hippo.png", "assets/images/pet.png", "B" )
      
      ),
 
