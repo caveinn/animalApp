@@ -1,20 +1,15 @@
 import 'package:animal_for_kids/pages/questions.dart';
 import 'package:flutter/material.dart';
 
-
-
-class  AnimalQuestion{
+class AnimalQuestion {
   final String detail;
-  final String  choiceA;
+  final String choiceA;
   final String choiceB;
   final String answer;
-  AnimalQuestion(this.detail,this.choiceA, this.choiceB, this.answer );
-
+  AnimalQuestion(this.detail, this.choiceA, this.choiceB, this.answer);
 }
 
-
-
-class Animal{
+class Animal {
   final String name;
   final String descripton;
   final String detail;
@@ -22,15 +17,16 @@ class Animal{
   final String img;
   final AnimalQuestion question;
 
-
-  Animal(this.name, this.descripton, this.detail, this.color, this.img,this.question);
+  Animal(this.name, this.descripton, this.detail, this.color, this.img,
+      this.question);
 }
 
-List<Animal>  getAnimals(){
+List<Animal> getAnimals() {
   List<Animal> animals = [
-    Animal("Lion",
-     "Lion is the king of the jungle",
-     '''
+    Animal(
+        "Lion",
+        "Lion is the king of the jungle",
+        '''
 Lions are part of the cat family.
 
 Lions eat meat.
@@ -47,13 +43,15 @@ The lionessess have no mane
 which allows them to run faster. They therefore 
 do all the hunting.
 
-     ''', Colors.orange[300], "assets/images/lion.png",
-     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/dinosaur.png", "A" )
-     ),
-
-    Animal("Hippo",
-    "Hippos are large animals that live ", 
-    '''
+     ''',
+        Colors.orange[300],
+        "assets/images/lion.png",
+        AnimalQuestion("Which is a lion", "assets/images/lion.png",
+            "assets/images/dinosaur.png", "A")),
+    Animal(
+        "Hippo",
+        "Hippos are large animals that live ",
+        '''
 Hippopotamus or hippo for short are
 large animals that eat plants.
 
@@ -68,23 +66,34 @@ river.
 They graze at night.
 
     ''',
-    
-     Colors.indigo[300],"assets/images/hippo.png",
-     AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
-    Animal("Rabbit","Rabbits are small mammals in the family of the", "Lion is the king of the jungle", Colors.green[300], "assets/images/rabbit.png", 
-    AnimalQuestion("Which is a lion", "assets/images/lion.png", "assets/images/lion.png", "A" )),
-    Animal("Giraffe","The Giraffe is the tallest animal in the world.", 
-    '''
+        Colors.indigo[300],
+        "assets/images/hippo.png",
+        AnimalQuestion("Which is a hippo", "assets/images/hippo.png",
+            "assets/images/lion.png", "A")),
+    Animal(
+        "Rabbit",
+        "Rabbits are small mammals in the family of the",
+        "Lion is the king of the jungle",
+        Colors.green[300],
+        "assets/images/rabbit.png",
+        AnimalQuestion("Which is a rabbit", "assets/images/giraffe.png",
+            "assets/images/rabbit.png", "B")),
+    Animal(
+        "Giraffe",
+        "The Giraffe is the tallest animal in the world.",
+        '''
     Giraffe live on the plains of Africa
     They grow as tall as a two story house
     They can eat leaves from tree tops thanks to their long necks
-      ''', 
-    Colors.brown[400], 
-    "assets/images/giraffe.png",
-    AnimalQuestion("Which is a hippo", "assets/images/hippo.png", "assets/images/lion.png", "B" )),
-     Animal("Zebra",
-"A zebra eats grass and has black and white stripes", 
-'''
+      ''',
+        Colors.brown[400],
+        "assets/images/giraffe.png",
+        AnimalQuestion("Which is a hippo", "assets/images/pet.png",
+            "assets/images/giraffe.png", "B")),
+    Animal(
+        "Zebra",
+        "A zebra eats grass and has black and white stripes",
+        '''
 Zebras eat grass.
 
 Zebras look a lot like horses. They have 
@@ -103,13 +112,14 @@ The stripes makes it hard for lions and other
 predators to see them and therefore they do 
 not bother them.
      ''',
-      Colors.blueGrey[300], "assets/images/zebra.png",
-      AnimalQuestion("Which is a Zebra", "assets/images/Zebra.png", "assets/images/giraffe.png", "A" )
-      ),
+        Colors.blueGrey[300],
+        "assets/images/zebra.png",
+        AnimalQuestion("Which is a Zebra", "assets/images/Zebra.png",
+            "assets/images/giraffe.png", "A")),
     Animal(
-      "Elephant",
-      "Elephants are the largest land-living mammal in the world.",
-    '''
+        "Elephant",
+        "Elephants are the largest land-living mammal in the world.",
+        '''
     There are two types of elephant, 
     the Asian elephant and the African elephant.
 
@@ -124,13 +134,15 @@ not bother them.
 
     Elaphants also have very large ears.
 
-    ''', 
-
-     Colors.brown[400], "assets/images/elephant.png",
-     AnimalQuestion("Which is an Elephant", "assets/images/elephant.png", "assets/images/lion.png", "A" )),
-
-    Animal("Dog","The Dog is humans best friend ", 
-    '''
+    ''',
+        Colors.brown[400],
+        "assets/images/elephant.png",
+        AnimalQuestion("Which is an Elephant", "assets/images/elephant.png",
+            "assets/images/lion.png", "A")),
+    Animal(
+        "Dog",
+        "The Dog is humans best friend ",
+        '''
     Dogs are pets. A pet is an animal we keep at
     home for fun.
     
@@ -143,12 +155,11 @@ not bother them.
     people.
 
      ''',
-     Colors.deepOrange[300], "assets/images/pet.png",
-     AnimalQuestion("Which is a dog", "assets/images/hippo.png", "assets/images/pet.png", "B" )
-     
-     ),
+        Colors.deepOrange[300],
+        "assets/images/pet.png",
+        AnimalQuestion("Which is a dog", "assets/images/hippo.png",
+            "assets/images/pet.png", "B")),
+  ];
 
-    ];
-  
   return animals;
 }
