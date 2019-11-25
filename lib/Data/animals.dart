@@ -72,8 +72,9 @@ They graze at night.
             "assets/images/lion.png", "A")),
     Animal(
         "Rabbit",
-        "Rabbits are small mammals in the family of the",
-        "Lion is the king of the jungle",
+        "Rabbits are small mammals in the rodent family ",
+        '''They feed on vegitation 
+         ''',
         Colors.green[300],
         "assets/images/rabbit.png",
         AnimalQuestion("Which is a rabbit", "assets/images/giraffe.png",

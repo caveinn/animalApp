@@ -37,7 +37,7 @@ import 'package:animal_for_kids/pages/questions.dart';
                                     child: RaisedButton(
                                       color: animal.color,
                                       onPressed: (){
-                                        Navigator.push(context, MaterialPageRoute(builder: (context) => Question(animal.question)));
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => Question(animal.question, animal)));
                                       },
                                       child: 
                                         Text("Questions")),

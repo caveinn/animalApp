@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 
 class Question extends StatefulWidget {
   AnimalQuestion question;
-  Question(this.question);
+  Animal animal;
+  Question(this.question, this.animal);
   @override
   _QuestionState createState() => _QuestionState();
 }
@@ -17,6 +18,7 @@ class _QuestionState extends State<Question> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: widget.animal.color,
         appBar: AppBar(
           elevation: 0.01,
           backgroundColor: Colors.white,
